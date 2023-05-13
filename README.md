@@ -1,4 +1,4 @@
-<h3>Bu proje Patika.Dev'in düzenlemiş olduğu Simpra .Net Bootcamp'inin 2.ödevi kapsamında geliştirilmiştir.</h3>
+<h3>Bu proje Patika.Dev'in düzenlemiş olduğu Simpra .Net Bootcamp'inin 2.ödevi kapsamında yapılmıştır.</h3>
 
 Proje 4 katmandan oluşmaktadır.
 
