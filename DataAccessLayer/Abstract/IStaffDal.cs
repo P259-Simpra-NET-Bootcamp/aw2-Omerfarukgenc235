@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IStaffDal : IRepository<Staff>
     {
+        List<Staff> GetStaffByAge(int age);
     }
 }

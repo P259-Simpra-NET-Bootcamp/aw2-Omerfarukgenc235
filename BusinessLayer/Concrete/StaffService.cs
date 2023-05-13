@@ -48,12 +48,19 @@ namespace BusinessLayer.Concrete
         {
             return _staffDal.Find(x => x.Id == id);
         }
-
+      
         public List<Staff> GetList()
         {
             return _staffDal.List();
         }
-
+        public List<Staff> GetListByCity(string city)
+        {
+            return _staffDal.List(x => x.City == city);
+        }
+        public List<Staff> FilterByAge(int age)
+        {
+            return _staffDal.GetStaffByAge(age);
+        }
         public bool Update(Staff staff)
         {    
             var validator = new StaffValidator();

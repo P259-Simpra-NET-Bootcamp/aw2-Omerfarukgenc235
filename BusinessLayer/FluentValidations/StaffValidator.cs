@@ -19,7 +19,7 @@ namespace BusinessLayer.FluentValidations
             RuleFor(x => x.Email).NotEmpty().WithMessage("Email Boş Olamaz!");
             RuleFor(x => x.Email).MaximumLength(50).WithMessage("Email en fazla 50 karakter olabilir!");
             RuleFor(x => x.Phone).NotEmpty().WithMessage("Telefon Numarası Boş Olamaz!");
-            RuleFor(x => x.Email).MaximumLength(11).WithMessage("Telefon numarası en fazla 11 karakter olabilir!");
+            RuleFor(x => x.Phone).MaximumLength(11).WithMessage("Telefon numarası en fazla 11 karakter olabilir!");
             RuleFor(x => x.DateOfBirth).NotEmpty().WithMessage("Doğum Tarihi Boş Olamaz!");
             RuleFor(x => x.AddressLine1).NotEmpty().WithMessage("Adres Boş Olamaz!");
             RuleFor(x => x.AddressLine1).MaximumLength(1000).WithMessage("Adres en fazla 1000 karakter olabilir!");

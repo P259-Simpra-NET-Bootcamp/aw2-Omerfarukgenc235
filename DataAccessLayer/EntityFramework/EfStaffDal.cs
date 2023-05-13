@@ -12,9 +12,20 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfStaffDal : Repository<Staff>, IStaffDal
     {
-        public EfStaffDal(Context dbContext) : base(dbContext)
+        private readonly DbContextOptions<Context> _options;
+
+        public EfStaffDal(DbContextOptions<Context> options) : base(new Context(options))
         {
+            _options = options;
+        }
+
+        public List<Staff> GetStaffByAge(int age)
+        {
+            using (var context = new Context(_options))
+            {
+                DateTime dateOfBirth = DateTime.Now.AddYears(-age); // Hesaplanan doğum tarihi
+                return context.Staffs.Where(s => s.DateOfBirth > dateOfBirth).ToList();
+            }
         }
     }
-
 }

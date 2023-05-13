@@ -27,6 +27,18 @@ namespace SimpraOdev2.Controllers
             var deger = _staffService.GetByID(id);
             return Ok(deger);
         }
+        [HttpGet("City")]
+        public IActionResult GetByCityFilter([FromQuery] string city)
+        {
+            var deger = _staffService.GetListByCity(city);
+            return Ok(deger);
+        }
+        [HttpGet("Age")]
+        public IActionResult GetByAgeFilter([FromQuery] int age)
+        {
+            var deger = _staffService.FilterByAge(age);
+            return Ok(deger);
+        }
         [HttpPost]
         public IActionResult Post([FromBody] Staff staff)
         {
