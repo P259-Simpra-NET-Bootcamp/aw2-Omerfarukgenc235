@@ -2,18 +2,18 @@
 
 Proje 4 katmandan oluşmaktadır.
 
-<h1>EntityLayer: Bu katmanda veri tabanı tablolarının sınıfları tutulmaktadır.</h1>
+<h4>EntityLayer: Bu katmanda veri tabanı tablolarının sınıfları tutulmaktadır.</h4>
 
 --> Models: Veri tabanı tablosunun sınıfı burada bulunmaktadır.
 
-<h1>DataAccessLayer: Bu katmanda GenericRepository, Context, Mapper, Migration gibi bölümler bulunmaktadır.</h1>
+<h4>DataAccessLayer: Bu katmanda GenericRepository, Context, Mapper, Migration gibi bölümler bulunmaktadır.</h4>
 
 -->Abstract: Burada GenericRepository ve Staff'in interfaceleri bulunmaktadır.
 -->Context: Burada Context sınıfı ve Repository sınıfı tutulmaktadır. 
 -->EntityFramework: Burada Staff sınıfının GenericRepository ile bağlantısı kurulmaktadır.
 -->Mapper: Burada veri tabanındaki tablonun genel özellikleri tanımlanmıştır.
 
-<h1>BusinessLayer: Bu katmanda projedeki tabloların CRUD işlemleri ve FluentValidation işlemleri gerçekleştirilmektedir.</h1>
+<h4>BusinessLayer: Bu katmanda projedeki tabloların CRUD işlemleri ve FluentValidation işlemleri gerçekleştirilmektedir.</h4>
 
 -->Abstract: Burada Staff'in CRUD işlemleri için interface'i oluşturulmuştur.
 -->Concrete: Burada Staff'in FluentValidation kontrollleri ve CRUD işlemleri gerçekleştirilmiştir.
