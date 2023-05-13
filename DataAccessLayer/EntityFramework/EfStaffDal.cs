@@ -23,7 +23,7 @@ namespace DataAccessLayer.EntityFramework
         {
             using (var context = new Context(_options))
             {
-                DateTime dateOfBirth = DateTime.Now.AddYears(-age); // Hesaplanan doğum tarihi
+                DateTime dateOfBirth = DateTime.Now.AddYears(-age);
                 return context.Staffs.Where(s => s.DateOfBirth > dateOfBirth).ToList();
             }
         }
