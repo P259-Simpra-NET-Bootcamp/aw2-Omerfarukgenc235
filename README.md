@@ -19,7 +19,7 @@ Proje 4 katmandan oluşmaktadır.
 -->Concrete: Burada Staff'in FluentValidation kontrollleri ve CRUD işlemleri gerçekleştirilmiştir.
 -->FluentValidations: Burada Staff sınıfının attribute'larının gerekli kontrolleri ve hata mesajları ayarlanmıştır.
 
-<h1>SimraOdev2: Bu katmanda projenin genel istekleri karşılanmaktadır.</h1>
+<h4>SimraOdev2: Bu katmanda projenin genel istekleri karşılanmaktadır.</h4>
 
 -->appsettings.json: Burada veri tabanı bağlantı yolu belirtilmiştir.
 -->ServiceExtension: Burada Program.cs sınıfının uzun olmaması için extension kullanılmıştır.
