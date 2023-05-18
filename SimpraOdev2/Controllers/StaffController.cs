@@ -42,7 +42,7 @@ namespace SimpraOdev2.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Staff staff)
         {
-            bool result = _staffService.Add(staff);
+            string result = _staffService.Add(staff);
             return Ok(result);
         }
         [HttpDelete]
@@ -54,7 +54,7 @@ namespace SimpraOdev2.Controllers
         [HttpPut]
         public IActionResult Update([FromBody] Staff staff)
         {
-            bool result = _staffService.Update(staff);
+            string result = _staffService.Update(staff);
             return Ok(result);
         }
     }

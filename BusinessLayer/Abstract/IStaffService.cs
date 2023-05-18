@@ -12,9 +12,9 @@ namespace BusinessLayer.Abstract
         List<Staff> GetList();
         List<Staff> GetListByCity(string city);
         List<Staff> FilterByAge(int age);
-        bool Add(Staff staff);
+        string Add(Staff staff);
         Staff GetByID(int id);
         bool Delete(int id);
-        bool Update(Staff staff);
+        string Update(Staff staff);
     }
 }

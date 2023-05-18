@@ -20,19 +20,26 @@ namespace BusinessLayer.Concrete
             _staffDal = staffDal;
         }
 
-        public bool Add(Staff staff)
+        public string Add(Staff staff)
         {
             var validator = new StaffValidator();
             var result = validator.Validate(staff);
 
             if (result.IsValid)
             {
-                int status = _staffDal.Insert(staff);
-                return status > 0;
+                try
+                {
+                    int status = _staffDal.Insert(staff);
+                    return "Veri başarılı bir şekilde eklenmiştir.";
+                }
+                catch
+                {
+                    return "Veri kaydedilirken bir hata meydana geldi.";
+                }
             }
             else
             {
-                throw new ValidationException(result.Errors);
+                return string.Join(", ", result.Errors.Select(error => error.ErrorMessage));
             }
         }
 
@@ -61,19 +68,26 @@ namespace BusinessLayer.Concrete
         {
             return _staffDal.GetStaffByAge(age);
         }
-        public bool Update(Staff staff)
-        {    
+        public string Update(Staff staff)
+        {
             var validator = new StaffValidator();
             var result = validator.Validate(staff);
 
             if (result.IsValid)
             {
-                int status = _staffDal.Update(staff);
-                return status > 0;
+                try
+                {
+                    int status = _staffDal.Update(staff);
+                    return "Veri başarılı bir şekilde güncellenmiştir.";
+                }
+                catch
+                {
+                    return "Veri kaydedilirken bir hata meydana geldi.";
+                }
             }
             else
             {
-                throw new ValidationException(result.Errors);
+                return string.Join(", ", result.Errors.Select(error => error.ErrorMessage));
             }
         }
     }
