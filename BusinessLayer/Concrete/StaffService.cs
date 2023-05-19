@@ -82,7 +82,7 @@ namespace BusinessLayer.Concrete
                 }
                 catch
                 {
-                    return "Veri kaydedilirken bir hata meydana geldi.";
+                    return "Veri güncellenirken bir hata meydana geldi.";
                 }
             }
             else

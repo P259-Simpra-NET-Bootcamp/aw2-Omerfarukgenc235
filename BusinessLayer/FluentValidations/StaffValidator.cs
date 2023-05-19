@@ -24,7 +24,7 @@ namespace BusinessLayer.FluentValidations
             RuleFor(x => x.AddressLine1).NotEmpty().WithMessage("Adres Boş Olamaz!");
             RuleFor(x => x.AddressLine1).MaximumLength(1000).WithMessage("Adres en fazla 1000 karakter olabilir!");
             RuleFor(x => x.City).NotEmpty().WithMessage("Şehir Boş Olamaz!");
-            RuleFor(x => x.City).MaximumLength(100).WithMessage("şehir en fazla 100 karakter olabilir!");
+            RuleFor(x => x.City).MaximumLength(100).WithMessage("Şehir en fazla 100 karakter olabilir!");
             RuleFor(x => x.Country).NotEmpty().WithMessage("Ülke Boş Olamaz!");
             RuleFor(x => x.City).MaximumLength(100).WithMessage("Ülke en fazla 100 karakter olabilir!");
             RuleFor(x => x.Province).NotEmpty().WithMessage("Vilayet Boş Olamaz!");
