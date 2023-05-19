@@ -12,7 +12,7 @@ Proje 4 katmandan oluşmaktadır.
 
 -->Context: Burada Context sınıfı ve Repository sınıfı tutulmaktadır. 
 
--->EntityFramework: Burada Staff sınıfının GenericRepository ile bağlantısı kurulmaktadır.
+-->EntityFramework: Burada GenericRepository ile bağlantılar kurulmaktadır.
 
 -->Mapper: Burada veri tabanındaki tablonun genel özellikleri tanımlanmıştır.
 
